@@ -121,8 +121,8 @@ def parse_args():
     parser.add_argument(
         "--save_checkpoint_interval",
         type=int,
-        default=200000,
-        help="Interval (in iterations) at which to save model checkpoints (default: 200).",
+        default=500000,
+        help="Interval (in iterations) at which to save model checkpoints (default: 500000).",
     )
     parser.add_argument(
         "--output_dir",
@@ -133,8 +133,8 @@ def parse_args():
     parser.add_argument(
         "--save_output_interval",
         type=int,
-        default=1000,
-        help="Number of iterations between saving intermediate output (default: 1000).",
+        default=100000,
+        help="Number of iterations between saving intermediate output (default: 100000).",
     )
     parser.add_argument(
         "--nrow",
@@ -145,8 +145,8 @@ def parse_args():
     parser.add_argument(
         "--compute_fid_interval",
         type=int,
-        default=20000,
-        help="Number of iterations between FID evaluations (default: 20000).",
+        default=100000,
+        help="Number of iterations between FID evaluations (default: 100000).",
     )
     parser.add_argument(
         "--mixed_precision",
